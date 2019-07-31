@@ -1,0 +1,19 @@
+# MySQL info for data which selected
+from:
+  host: '127.0.0.1'
+  port: 3306
+  user: 'root'
+  password: 'password'
+  # query result columns should be same as destination table.
+  # the script insert data directly using result columns name.
+  query: |-
+    SELECT * FROM user_old;
+
+# MySQL info for data which will inserted
+to:
+  host: '127.0.0.1'
+  port: 3306
+  db: 'db'
+  table: 'user_new'
+  user: 'root'
+  password: 'password'
